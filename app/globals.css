@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --burgundy-50: #fdf2f4;
+  --burgundy-100: #fce7ea;
+  --burgundy-200: #f9d0d5;
+  --burgundy-300: #f4a9b3;
+  --burgundy-400: #ed7785;
+  --burgundy-500: #e34d5c;
+  --burgundy-600: #d42a3c;
+  --burgundy-700: #b21e2f;
+  --burgundy-800: #931b2a;
+  --burgundy-900: #7a1a27;
+
+  --cream-50: #fdfcfa;
+  --cream-100: #fbf8f1;
+  --cream-200: #f7f0e3;
+  --cream-300: #f3e8d4;
+  --cream-400: #efdfc6;
+  --cream-500: #ebd7b7;
+  --cream-600: #e7cfa9;
+  --cream-700: #e3c79a;
+  --cream-800: #dfbf8c;
+  --cream-900: #dbb77e;
+
+  --gold-50: #fffbeb;
+  --gold-100: #fef3c7;
+  --gold-200: #fde68a;
+  --gold-300: #fcd34d;
+  --gold-400: #fbbf24;
+  --gold-500: #f59e0b;
+  --gold-600: #d97706;
+  --gold-700: #b45309;
+  --gold-800: #92400e;
+  --gold-900: #78350f;
+}
+
+.bg-burgundy-50 {
+  background-color: var(--burgundy-50);
+}
+.bg-burgundy-100 {
+  background-color: var(--burgundy-100);
+}
+.bg-burgundy-200 {
+  background-color: var(--burgundy-200);
+}
+.bg-burgundy-300 {
+  background-color: var(--burgundy-300);
+}
+.bg-burgundy-400 {
+  background-color: var(--burgundy-400);
+}
+.bg-burgundy-500 {
+  background-color: var(--burgundy-500);
+}
+.bg-burgundy-600 {
+  background-color: var(--burgundy-600);
+}
+.bg-burgundy-700 {
+  background-color: var(--burgundy-700);
+}
+.bg-burgundy-800 {
+  background-color: var(--burgundy-800);
+}
+.bg-burgundy-900 {
+  background-color: var(--burgundy-900);
+}
+
+.bg-cream-50 {
+  background-color: var(--cream-50);
+}
+.bg-cream-100 {
+  background-color: var(--cream-100);
+}
+.bg-cream-200 {
+  background-color: var(--cream-200);
+}
+.bg-cream-300 {
+  background-color: var(--cream-300);
+}
+.bg-cream-400 {
+  background-color: var(--cream-400);
+}
+.bg-cream-500 {
+  background-color: var(--cream-500);
+}
+.bg-cream-600 {
+  background-color: var(--cream-600);
+}
+.bg-cream-700 {
+  background-color: var(--cream-700);
+}
+.bg-cream-800 {
+  background-color: var(--cream-800);
+}
+.bg-cream-900 {
+  background-color: var(--cream-900);
+}
+
+.bg-gold-50 {
+  background-color: var(--gold-50);
+}
+.bg-gold-100 {
+  background-color: var(--gold-100);
+}
+.bg-gold-200 {
+  background-color: var(--gold-200);
+}
+.bg-gold-300 {
+  background-color: var(--gold-300);
+}
+.bg-gold-400 {
+  background-color: var(--gold-400);
+}
+.bg-gold-500 {
+  background-color: var(--gold-500);
+}
+.bg-gold-600 {
+  background-color: var(--gold-600);
+}
+.bg-gold-700 {
+  background-color: var(--gold-700);
+}
+.bg-gold-800 {
+  background-color: var(--gold-800);
+}
+.bg-gold-900 {
+  background-color: var(--gold-900);
+}
+
+.text-burgundy-900 {
+  color: var(--burgundy-900);
+}
+.text-burgundy-800 {
+  color: var(--burgundy-800);
+}
+.text-burgundy-700 {
+  color: var(--burgundy-700);
+}
+.text-burgundy-600 {
+  color: var(--burgundy-600);
+}
+.text-burgundy-500 {
+  color: var(--burgundy-500);
+}
+
+.text-cream-100 {
+  color: var(--cream-100);
+}
+
+.text-gold-300 {
+  color: var(--gold-300);
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .review-carousel-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .review-carousel-arrow {
+    top: auto;
+    bottom: -3rem;
+    transform: none;
+  }
+
+  .review-carousel-arrow.left {
+    left: 35%;
+  }
+
+  .review-carousel-arrow.right {
+    right: 35%;
+  }
+}
+
+/* Additional responsive utilities */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimized animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Improved focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--burgundy-500);
+  outline-offset: 2px;
+}
+
+/* Lazy loading placeholder */
+.lazy-image-placeholder {
+  background-color: var(--cream-200);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
