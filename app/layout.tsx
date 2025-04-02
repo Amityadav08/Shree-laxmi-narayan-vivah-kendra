@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} flex flex-col min-h-screen`} suppressHydrationWarning>
+      <body className={`${inter.className} flex flex-col min-h-screen overflow-x-hidden`} suppressHydrationWarning>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
@@ -33,4 +33,3 @@ export default function RootLayout({
     </html>
   )
 }
-import './globals.css'

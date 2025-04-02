@@ -120,12 +120,12 @@ const Header = () => {
         isScrolled ? "bg-white/80 backdrop-blur-sm shadow-sm" : "bg-white",
       )}
     >
-      <div className="container max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="relative w-16 h-16 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm">
+        <Link href="/" className="relative w-12 h-12 md:w-20 md:h-20 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm">
           <Image
-            src="/logo.png"
-            alt="Shree Laxminarayan Vivah Kendra Logo"
+            src="/logo2c1.jpg"
+            alt="Shree Laxminarayan Vivah Kendra "
             fill
             className="object-contain"
             priority
